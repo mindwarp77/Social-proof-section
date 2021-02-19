@@ -1,0 +1,33 @@
+body{
+    height: auto;
+}
+#resp-bg-bot, #resp-bg-top {
+    display:block;
+    width: 100%;
+    height: auto;
+}
+
+#bg-bottom, #bg-top {
+    display: none;
+}
+#presentation{
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+.intro {
+    width: 80%;
+    align-self: center;
+    text-align: center;
+}
+
+.intro h2{
+    font-size: 8vw;
+    margin-top:2em;
+    align-self: center;
+}
+
+.intro p, .style1 {
+    font-size: 5vw;
+    line-height: 1.5em;
+}
