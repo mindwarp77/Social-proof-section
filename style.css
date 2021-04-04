@@ -1,0 +1,288 @@
+.main-content .main-intro .main-intro_text > p, .main-content .main-customers .buyer .buyer_comment {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 400;
+}
+
+.main-content .main-intro .main-intro_rate-container .rate-box > p, .main-content .main-customers .buyer .buyer_profile .buyer_profile-text {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 600;
+}
+
+.main-content .main-intro .main-intro_text > h2 {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 375px) {
+  .main-content .d-top-bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .main-content .m-top-bg {
+    display: none;
+  }
+  .main-content .d-bot-bg {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .main-content .m-bot-bg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main-content .d-top-bg {
+    display: none;
+  }
+  .main-content .m-top-bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .main-content .m-bot-bg {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .main-content .d-bot-bg {
+    display: none;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main-content .main-intro {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-content .main-intro .main-intro_text {
+  width: 40%;
+}
+
+.main-content .main-intro .main-intro_text > h2 {
+  font-size: 3.5rem;
+  line-height: 1em;
+  color: #502050;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-content .main-intro .main-intro_text > h2 {
+    font-size: 3rem;
+  }
+}
+
+.main-content .main-intro .main-intro_text > p {
+  font-size: 1.2rem;
+  color: #937b92;
+  line-height: 1.6em;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-content .main-intro .main-intro_text > p {
+    font-size: 1rem;
+  }
+}
+
+.main-content .main-intro .main-intro_rate-container {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 200;
+}
+
+@media screen and (max-width: 1440px) {
+  .main-content .main-intro .main-intro_rate-container {
+    width: 55%;
+  }
+}
+
+.main-content .main-intro .main-intro_rate-container .rate-box {
+  width: 80%;
+  background-color: #f7f2f7;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 5px 0;
+  margin: 12.5px 0;
+}
+
+.main-content .main-intro .main-intro_rate-container .rate-box > p {
+  font-size: 1rem;
+  color: #502050;
+}
+
+.main-content .main-intro .main-intro_rate-container .rate-box .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 156px;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.main-content .main-intro .main-intro_rate-container .rate-box .stars .star {
+  margin: 0 4px;
+}
+
+.main-content .main-intro .main-intro_rate-container .reviews-rate {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.main-content .main-intro .main-intro_rate-container .report-guru-rate {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main-content .main-intro .main-intro_rate-container .besttech-rate {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.main-content .main-customers {
+  width: 80%;
+  height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-content .main-customers .buyer {
+  width: 30%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #502050;
+  color: #f7f2f7;
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
+.main-content .main-customers .buyer .buyer_profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.main-content .main-customers .buyer .buyer_profile > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+.main-content .main-customers .buyer .buyer_profile .buyer_profile-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-content .main-customers .buyer .buyer_profile .buyer_profile-text > h5 {
+  margin: 0;
+}
+
+.main-content .main-customers .buyer .buyer_profile .buyer_profile-text .verified_buyer {
+  margin-top: 10px;
+  color: #ee68a4;
+}
+
+.main-content .main-customers .buyer .buyer_comment {
+  font-size: 1rem;
+  line-height: 1.6em;
+}
+
+.main-content .main-customers .left-buyer {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.main-content .main-customers .central-buyer {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main-content .main-customers .right-buyer {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+/*# sourceMappingURL=style.css.map */

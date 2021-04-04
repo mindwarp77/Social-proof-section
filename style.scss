@@ -1,0 +1,236 @@
+$primaryMagenta:hsl(300, 43%, 22%);
+$primaryPink: hsl(333, 80%, 67%);
+
+$neutralDarkMagenta: hsl(303, 10%, 53%);
+$neutralLightMagenta: hsl(300, 24%, 96%);
+$neutralWhite: hsl(0, 0%, 100%);
+
+%fontSpartan400 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+
+%fontSpartan600 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+}
+
+%fontSpartan700 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+}
+
+%responsiveBackground {
+    @media screen and (min-width:375px){
+        .d-top-bg {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .m-top-bg {
+            display: none;
+        }
+
+        .d-bot-bg {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .m-bot-bg {
+            display:none;
+        }
+        
+    }
+    @media screen and (max-width:375px){
+        .d-top-bg {
+            display: none;
+        }
+
+        .m-top-bg {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .m-bot-bg {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .d-bot-bg {
+            display: none;
+        }
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    width:100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    @extend %responsiveBackground;
+
+    .main-intro {
+        width: 80%;
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+
+        .main-intro_text {
+            width: 40%;
+            & > h2 {
+                @extend %fontSpartan700;
+                font-size: 3.5rem;
+                line-height: 1em;
+                color: $primaryMagenta;
+                @media screen and (max-width: 1024px){
+                    font-size: 3rem;
+                }
+            }
+
+            & > p {
+                @extend %fontSpartan400;
+                font-size: 1.2rem;
+                color: $neutralDarkMagenta;
+                line-height: 1.6em;
+                @media screen and (max-width: 1024px){
+                    font-size: 1rem;
+                }
+            }
+        }
+        .main-intro_rate-container {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            z-index: 200;
+            @media screen and (max-width:1440px){
+                width: 55%;
+            }
+            .rate-box {
+                width: 80%;
+                background-color: $neutralLightMagenta;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                padding: 5px 0;
+                margin: 12.5px 0;
+                
+                & > p {
+                    font-size: 1rem;
+                    @extend %fontSpartan600;
+                    color: $primaryMagenta;
+                }
+
+                .stars {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 156px;
+                    margin-left: 15px;
+                    margin-right: 20px;
+                    .star {
+                        margin: 0 4px;
+                    }
+                }
+            }
+
+            .reviews-rate {
+                align-self: flex-start;
+            }
+
+            .report-guru-rate {
+                align-self: center;
+            }
+
+            .besttech-rate {
+                align-self: flex-end;
+            }
+        }
+    }
+
+    .main-customers {
+        width: 80%;
+        height: 35vh;
+        display: flex;
+        justify-content: space-between;
+
+        .buyer {      
+            width: 30%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: $primaryMagenta;
+            color: $neutralLightMagenta;
+            padding: 20px 40px;
+            border-radius: 8px;
+
+            .buyer_profile {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                & > img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin-right: 25px;
+                }
+
+                .buyer_profile-text {
+                    display: flex;
+                    flex-direction: column;
+                    @extend %fontSpartan600;
+
+                    & > h5 {
+                        margin: 0;
+                    }
+
+                    .verified_buyer {
+                        margin-top: 10px;
+                        color: $primaryPink;
+                    }
+                }
+            }
+            .buyer_comment {
+                font-size: 1rem;
+                @extend %fontSpartan400;
+                line-height: 1.6em;
+            }
+        }
+
+        .left-buyer {
+            align-self: flex-start;
+        }
+
+        .central-buyer {
+            align-self: center;
+        }
+
+        .right-buyer {
+            align-self: flex-end;
+        }
+    }
+}
+
+
+
+// responsive a faire
